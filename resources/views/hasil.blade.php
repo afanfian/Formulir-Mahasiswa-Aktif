@@ -28,6 +28,10 @@
                                 <td>{{ $data->nrp }}</td>
                             </tr>
                             <tr>
+                                <td style="width:150px">Jenis Kelamin</td>
+                                <td>{{ $data->jeniskelamin}}</td>
+                            </tr>
+                            <tr>
                                 <td style="width:150px">Departemen</td>
                                 <td>{{ $data->departemen }}</td>
                             </tr>

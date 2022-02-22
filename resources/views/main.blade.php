@@ -42,6 +42,10 @@
                                     <input class="form-control" type="text" name="nrp" value="{{ old('nrp') }}">
                                 </div>
                                 <div class="form-group">
+                                    <label for="jeniskelamin">Jenis Kelamin</label>
+                                    <input class="form-control" type="text" name="jeniskelamin" value="{{ old('jeniskelamin') }}">
+                                </div>
+                                <div class="form-group">
                                     <label for="departemen">Departemen</label>
                                     <input class="form-control" type="text" name="departemen" value="{{ old('departemen') }}">
                                 </div>

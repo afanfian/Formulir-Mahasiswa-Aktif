@@ -17,12 +17,12 @@ class FormController extends Controller
         $this->validate($request,[
            'nama' => 'required|min:5|max:20',
            'nrp' => 'required|numeric',
+           'jeniskelamin' => 'required|',
            'departemen' => 'required',
            'angkatan' => 'required|numeric',
            'ipk' => 'required|numeric',
            'ips' => 'required|numeric'
         ]);
- 		
         return view('hasil',['data' => $request]);
     }
 }
