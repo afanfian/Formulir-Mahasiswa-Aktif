@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 </head>
 <body>
- 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -28,9 +27,8 @@
                                 </ul>
                             </div>
                             @endif
- 
                             <br/>
-                             <!-- form validasi -->
+                             <!-- form hasil -->
                             <form action="/hasil" method="post" enctype="multipart/form-data">
                                 {{ csrf_field() }}
                                 <div class="form-group">
@@ -42,7 +40,7 @@
                                     <input class="form-control" type="text" name="nrp" value="{{ old('nrp') }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="jeniskelamin">Jenis Kelamin</label>
+                                    <label for="jeniskelamin">Jenis Kelamin (L/P)</label>
                                     <input class="form-control" type="text" name="jeniskelamin" value="{{ old('jeniskelamin') }}">
                                 </div>
                                 <div class="form-group">
@@ -75,6 +73,5 @@
                 </div>
             </div>
         </div>
-   
 </body>
 </html>

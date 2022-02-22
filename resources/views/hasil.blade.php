@@ -28,7 +28,7 @@
                                 <td>{{ $data->nrp }}</td>
                             </tr>
                             <tr>
-                                <td style="width:150px">Jenis Kelamin</td>
+                                <td style="width:200px">Jenis Kelamin (L/P)</td>
                                 <td>{{ $data->jeniskelamin}}</td>
                             </tr>
                             <tr>
@@ -47,6 +47,10 @@
                                 <td style="width:150px">IPS</td>
                                 <td>{{ $data->ips }}</td>
                             </tr>
+                            <tr>
+                                <td style="width:150px">KTM</td>
+                                <td>{{ $data->ktm }}</td>
+                            </tr>
                         </table>
                         <a href="/main" class="btn btn-success">Kembali</a>
                     </div>
@@ -54,6 +58,6 @@
             </div>
         </div>
     </div>
-
 </body>
+@include('sweetalert::alert')
 </html> 
