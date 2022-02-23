@@ -49,7 +49,7 @@
                             </tr>
                             <tr>
                                 <td style="width:150px">KTM</td>
-                                <td>{{ $data->ktm }}</td>
+                                <td><img src="{{ $data->ktm }}" alt="" width="200px"></td>
                             </tr>
                         </table>
                         <a href="/main" class="btn btn-success">Kembali</a>

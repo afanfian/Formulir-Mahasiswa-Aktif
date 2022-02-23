@@ -26,6 +26,8 @@ class FormController extends Controller
            'ipk' => 'required|numeric',
            'ips' => 'required|numeric',
         ]);
+        $foto_link = $this->saveFoto( $request, 1 );
+        $request->ktm = $foto_link;
         return view('hasil',['data' => $request]);
     }
     public function create()
@@ -33,22 +35,9 @@ class FormController extends Controller
         return view('main');
     }
 
-    public function store(Request $request)
-    {
-        $post = Post::create([
-            'caption' => $request->caption,
-            'id_user' => Auth::guard('web')->user()->id
-        ]);
-        $post->update([
-            'foto' => $this->saveFoto($request, $post->id)
-        ]);
-
-        return redirect()->route('post.view', ['id' => $post->id]);
-    }
-
     public function saveFoto(Request $request, $id)
     {
-        $foto = $request->foto; // typedata : file
+        $foto = $request->ktm; // typedata : file
         $foto_name = ''; // typedata : string
         if ($foto !== NULL) {
             $foto_name = 'foto' . '-' . $id . "." . $foto->extension(); // typedata : string

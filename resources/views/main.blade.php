@@ -60,7 +60,7 @@
                                     <input class="form-control" type="text" name="ips" value="{{ old('ips') }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="ktm">KTM</label>
+                                    <label for="foto">KTM</label>
                                     <input type="file" class="form-control-file" id="ktm" name="ktm" accept="image/png">
                                 </div>
                                 <div class="form-group">
