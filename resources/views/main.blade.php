@@ -13,7 +13,7 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body style="font-family: Poppins; font-family: fw-semibold; color:black; background-color: white ">
+<body style="font-family: Poppins; color:white; background-color: white ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -67,10 +67,10 @@
                                     <label for="foto">KTM</label>
                                     <input type="file" class="form-control-file" id="ktm" name="ktm" accept="image/png, image/jpg, image/jpeg">
                                 </div>
-                                <div class="form-check" >
+                                <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1" >Tolong diteliti dan dicentang!</label>
-                                  </div>
+                                </div>
                                 <div class="form-group" style="text-align: center;">
                                     <input class="btn btn-primary" type="submit" value="Kirim" style="">
                                 </div>

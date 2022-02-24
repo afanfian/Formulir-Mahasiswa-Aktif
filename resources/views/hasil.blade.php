@@ -13,7 +13,7 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/style.css">
 </head>
-    <body style="font-family: Poppins; font-family: fw-semibold; color:black; background-color: white ">
+    <body style="font-family: Poppins; color:white; background-color: white ">
         <div class="container" >
             <div class="row justify-content-center">
                 <div class="col-lg-6">
