@@ -1,7 +1,7 @@
 .card-body{
     background-color: #37e287; 
     border-radius: 30px; 
-    box-shadow: 10px 10px rgb(48, 47, 47);
+    box-shadow: 20px 10px 10px rgb(92, 91, 91);
 }
 .btn{
     font-size: 1.3em; 
@@ -12,4 +12,10 @@
 .btn:hover{
     background-color: #008CBA;
     Color: white;
+}
+.form-check{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 4%;
 }

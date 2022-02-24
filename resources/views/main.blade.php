@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulir Keterangan Mahasiswa Aktif</title>
+    <title>Formulir Keterangan Mahasiswa Aktif ITS</title>
  
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
                     <div class="card mt-5">
                         <div class="card-body">
                             <p style="text-align: center"><img src="/img/lambang-its.png" alt="Logo ITS" width="100px"></p>
-                            <h3 class="text-center">Formulir Keterangan Mahasiswa Aktif ITS</h3>
+                            <h3 class="text-center" style="font-weight: bold">Formulir Keterangan Mahasiswa Aktif ITS</h3>
                             <br/>
                                 @if (count($errors) > 0)
                                 <div class="alert alert-danger">
@@ -67,15 +67,18 @@
                                     <label for="foto">KTM</label>
                                     <input type="file" class="form-control-file" id="ktm" name="ktm" accept="image/png, image/jpg, image/jpeg">
                                 </div>
+                                <div class="form-check" >
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1" >Tolong diteliti dan dicentang!</label>
+                                  </div>
                                 <div class="form-group" style="text-align: center;">
                                     <input class="btn btn-primary" type="submit" value="Kirim" style="">
                                 </div>
                             </form>
- 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-</body>
+    </body>
 </html>
