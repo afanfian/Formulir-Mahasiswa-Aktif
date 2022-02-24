@@ -18,7 +18,7 @@ class FormController extends Controller
     {
         Alert::success('Pesan Terkirim!', 'Selamat Data Anda Sudah Terkirim');
         $this->validate($request,[
-           'nama' => 'required|min:5|max:20',
+           'nama' => 'required|min:8|max:50',
            'nrp' => 'required|numeric',
            'jeniskelamin' => 'required|max:1',
            'departemen' => 'required',
