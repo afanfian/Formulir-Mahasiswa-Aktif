@@ -31,11 +31,6 @@ class FormController extends Controller
         $request->ktm = $foto_link;
         return view('hasil',['data' => $request]);
     }
-    public function create()
-    {
-        return view('main');
-    }
-
     public function saveFoto(Request $request, $id)
     {
         $foto = $request->ktm; // typedata : file
