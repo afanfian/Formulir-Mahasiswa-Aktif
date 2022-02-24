@@ -22,5 +22,5 @@ Route::get('/', function () {
 //Asigment Formulir
 
 
-Route::get('/main', [FormController::class, 'input']);
-Route::post('/hasil', [FormController::class, 'proses']);
+Route::get('/main', [FormController::class, 'formulir']);
+Route::post('/hasil', [FormController::class, 'hasil']);
