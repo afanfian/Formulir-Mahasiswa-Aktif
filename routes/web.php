@@ -57,7 +57,7 @@ Route::get('categories', function () {
 });
 
 //Route author 
-Route::get('authors/{user}', function (User $user) {
+Route::get('authors/{user:username}', function (User $user) {
     return view('article', [
         'title' => 'User Article',
         'articles' => $user->articles,

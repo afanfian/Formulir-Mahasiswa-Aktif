@@ -15,11 +15,11 @@
         @foreach($articles as $article)
             <article class="mb-5 border-bottom pb-4">
                 <h3>
-                    <a href="/article/{{ $article->slug }}" class="text-decoration-none">
+                    <a href="/article/{{ $article->slug }}" class="text-decoration-none" style="color: black">
                     {{ $article->title }}
                     </a>                    
                 </h3>
-                <h5>By. <a href="/authors/{{ $article->user->id }}" class="text-decoration-none">{{ $article->user->name }}</a> in <a href="/categories/{{ $article->category->slug }}" class="text-decoration-none">{{ $article->category->name }}</a></h5>
+                <h5>Author by: <a href="/authors/{{ $article->user->username }}" class="text-decoration-none" style="color: red">{{ $article->user->name }}</a> in <a href="/categories/{{ $article->category->slug }}" class="text-decoration-none">{{ $article->category->name }}</a></h5>
                 <p style="font-size: 20px">{{ $article->excerpt }}</p>
                 <a href="/article/{{ $article->slug }}" class="text-decoration-none">Read More...</a>         
             </article>

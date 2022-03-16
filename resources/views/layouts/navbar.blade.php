@@ -5,7 +5,7 @@
 <nav>
     <ul>
         <li><a href="/article" class="nav-li">Article</a></li>
-        <li><a href="/main" class="nav-li">Form Surat Akitf Mahasiswa ITS</a></li>
+        <li><a href="/main" class="nav-li">Form Surat Aktif Mahasiswa ITS</a></li>
     </ul>
 </nav>
 <div class="container mt-5">
