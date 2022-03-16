@@ -1,3 +1,7 @@
+@extends('layouts.main')
+
+@section('title', 'Formulir Surat Keterangan Mahasiswa Aktif ITS')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body style="font-family: Poppins; color:white; background-color: white ">
+<body style="font-family: Poppins; color:white; background-color: white; padding-top:50px; ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">

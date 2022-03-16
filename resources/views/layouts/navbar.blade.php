@@ -14,10 +14,7 @@
                         <a class="nav-link" href="/article">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/input">Input Formulir</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/formulir">Guest Form</a>
+                        <a class="nav-link" href="/main">Form Keterangan Mahasiswa Aktif ITS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/article">Article</a>
