@@ -1,35 +1,35 @@
 <?php
- 
+
 namespace App\Http\Controllers;
- 
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
- 
+
 class FormController extends Controller
 {
     public function formulir()
     {
         return view('main');
     }
- 
+
     public function hasil(Request $request)
     {
         Alert::success('Pesan Terkirim!', 'Selamat Data Anda Sudah Terkirim');
-        $this->validate($request,[
-           'nama' => 'required|min:8|max:50',
-           'nrp' => 'required|numeric',
-           'jeniskelamin' => 'required|max:1',
-           'departemen' => 'required',
-           'angkatan' => 'required|numeric',
-           'ipk' => 'required|numeric',
-           'ips' => 'required|numeric',
-           'ktm' => 'required|mimes:jpg,png,jpeg|max:2048',
+        $this->validate($request, [
+            'nama' => 'required|min:8|max:50',
+            'nrp' => 'required|numeric',
+            'jeniskelamin' => 'required|max:1',
+            'departemen' => 'required',
+            'angkatan' => 'required|numeric',
+            'ipk' => 'required|numeric',
+            'ips' => 'required|numeric',
+            'ktm' => 'required|mimes:png,jpg,jpeg|max:2048',
         ]);
-        $foto_link = $this->saveFoto( $request, 1 );
+        $foto_link = $this->saveFoto($request, 1);
         $request->ktm = $foto_link;
-        return view('hasil',['data' => $request]);
+        return view('hasil', ['data' => $request]);
     }
     public function saveFoto(Request $request, $id)
     {
