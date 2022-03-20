@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id'); //Foreign key dari tabel Category
-            $table->foreignId('user_id');
+            $table->foreignId('user_id'); //Foreign key dari tabel user
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('author');
