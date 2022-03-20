@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         //Menggunakan dan membuka user faker 
-        User::factory(5)->create();
+        User::factory(4)->create();
 
         //membuat factory atau faker Article
         Article::factory(20)->create();

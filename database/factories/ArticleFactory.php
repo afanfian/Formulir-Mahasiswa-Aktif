@@ -23,7 +23,7 @@ class ArticleFactory extends Factory
             'slug' => $this->faker->slug(),
             'excerpt' => $this->faker->paragraph(mt_rand(1, 2)),
             'body' => $this->faker->paragraph(mt_rand(10, 30)),
-            'user_id' => mt_rand(1, 5),
+            'user_id' => mt_rand(1, 4),
             'category_id' => mt_rand(1, 4)
         ];
     }
