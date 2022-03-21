@@ -71,22 +71,22 @@ class DatabaseSeeder extends Seeder
         //     'published_at' => '2022-08-03 19:32:14'
         // ]);
         // // Category
-        Category::create([
-            'name' => 'Afanfian Web Development',
-            'slug' => 'Afanfian-Web-Development'
-        ]);
-        Category::create([
-            'name' => 'Afanfian Front-end Developer',
-            'slug' => 'Afanfian-Front-end'
-        ]);
-        Category::create([
-            'name' => 'Afanfian DevOps Engineer',
-            'slug' => 'Afanfian-DevOps-Engineer'
-        ]);
-        Category::create([
-            'name' => 'Afanfian Information Technology Support Technician',
-            'slug' => 'Afanfian-Information-Technology Support-Technician'
-        ]);
+        // Category::create([
+        //     'name' => 'Afanfian Web Development',
+        //     'slug' => 'Afanfian-Web-Development'
+        // ]);
+        // Category::create([
+        //     'name' => 'Afanfian Front-end Developer',
+        //     'slug' => 'Afanfian-Front-end'
+        // ]);
+        // Category::create([
+        //     'name' => 'Afanfian DevOps Engineer',
+        //     'slug' => 'Afanfian-DevOps-Engineer'
+        // ]);
+        // Category::create([
+        //     'name' => 'Afanfian Information Technology Support Technician',
+        //     'slug' => 'Afanfian-Information-Technology Support-Technician'
+        // ]);
         // // User
         // User::create([
         //     'name' => 'Fian Awamiry Maulana',
@@ -109,10 +109,11 @@ class DatabaseSeeder extends Seeder
         //     'password' => bcrypt('12345')
         // ]);
 
-        //Menggunakan dan membuka user faker 
-        User::factory(4)->create();
 
-        //membuat factory atau faker Article
         Article::factory(20)->create();
+
+        Category::factory(4)->create();
+
+        User::factory(4)->create();
     }
 }
